@@ -49,5 +49,7 @@ const { news, total, current } = storeToRefs(rootStore);
         letter-spacing: -0.01em;
         text-align: center;
         color: rgba(0, 45, 191, 1);
+
+        cursor: pointer;
     }
 </style>
