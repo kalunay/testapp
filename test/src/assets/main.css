@@ -1,35 +1,61 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 2rem;
-
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.container {
+  width: calc(100% - 100px);
+  margin: 0 auto
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.header-top {
+  padding: 40px 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.header-bottom {
+  background: url(/images/header-bg.jpg) 50% 50% no-repeat;
+  width: 100%;
+  min-height: 320px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.header-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: rgba(23, 23, 26, 1);
+  margin-bottom: 48px;
+}
+
+footer {
+  background: rgba(240, 246, 254, 1);
+  padding: 64px 0;
+}
+
+footer .logo img {
+  height: 36px;
+  width: auto;
+}
+
+footer .logo {
+  margin-top: 16px;
+}
+
+.copy {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(129, 137, 157, 1);
 }
